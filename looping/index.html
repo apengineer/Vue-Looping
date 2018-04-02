@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>VueJS - Computed Properties</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+
+<body>
+  <div id="v-coditionals">
+    <h1> Looping Examples</h1>
+
+    <p>Actors</p>
+    <ul>
+      <li v-for = "x in actors"> {{x}}</li>
+    </ul>
+    <p>Movies & IMDB Ratings</p>
+    <ul>
+      <li v-for="movies in movies">
+        {{movies.name}} : {{movies.rating}}
+      </li>
+    </ul>
+    <p> Outputting index </p>
+    <ul>
+      <li v-for = "(x,index) in actors"> {{index}} . {{x}}</li>
+    </ul>
+    <script src="app.js"></script>
+  </div>
+</body>
+
+</html>
